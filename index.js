@@ -23,9 +23,17 @@ function displayCurrentWeather(json) {
   const tempContainer = document.getElementById('temp')
   tempContainer.innerHTML = json.main.temp
   
-  const lowTemp = json.main.temp 
-  const tempContainer = document.getElementById('temp')
-  tempContainer.innerHTML = json.main.temp
+  const lowTemp = json.main.temp_min 
+  const lowTempContainer = document.getElementById('low')
+  lowTempContainer.innerHTML = json.main.temp_min
+  
+  const highTemp = json.main.temp_max
+  const highTempContainer = document.getElementById('high')
+  highTempContainer.innerHTML = json.main.temp_max
+  
+  const humidity = json.main.humidity
+  const humidityContainer = document.getElementById('humidity')
+  humidityContainer.innerHTML = json.main.humidity
   
   
 }
