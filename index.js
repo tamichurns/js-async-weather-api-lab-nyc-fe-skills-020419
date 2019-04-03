@@ -3,11 +3,15 @@ const API_KEY = "fcb455e258ac97e3075c2c6f41bd1739"
 function handleFormSubmit(event) {
   //handle submit event
   event.preventDefault()
-  const city = 
+  const input = document.getElementById('city')
+  const city = input.value
+  fetchCurrentWeather(city)
+  fetchFiveDayForecast(city)
 }
 
 function fetchCurrentWeather(city) {
   //fetch current weather based on city
+  
 }
 
 function displayCurrentWeather(json) {
