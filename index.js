@@ -22,6 +22,12 @@ function displayCurrentWeather(json) {
   const currentTemp = json.main.temp 
   const tempContainer = document.getElementById('temp')
   tempContainer.innerHTML = json.main.temp
+  
+  const lowTemp = json.main.temp 
+  const tempContainer = document.getElementById('temp')
+  tempContainer.innerHTML = json.main.temp
+  
+  
 }
 
 
