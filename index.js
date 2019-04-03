@@ -36,7 +36,7 @@ function displayCurrentWeather(json) {
   humidityContainer.innerHTML = json.main.humidity
   
   const clouds = json.clouds.all
-  const cloudsContainer = document.getElementById('clouds')
+  const cloudsContainer = document.getElementById('cloudCover')
   cloudsContainer.innerHTML = json.clouds.all
   
   
