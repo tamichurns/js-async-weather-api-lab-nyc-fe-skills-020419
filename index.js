@@ -74,6 +74,8 @@ function createChart(json) {
   
   const labels = json.list.map((forecast) => {return forecast.dt_txt} )
   
+  const temps = json.list.map((forecast) => {return forecast.main.temp} )
+  
   new Chart(ctx, {
     type: 'line',
     data: {
