@@ -56,7 +56,7 @@ function displayFiveDayForecast(json) {
   console.log(json) //we have 39 objects in an array and we want to make a div for each 
   const forecasts = json.list 
   for (let forecast of forecasts) {
-    document.createElement('div')
+  
     
   }
 }
