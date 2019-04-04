@@ -72,7 +72,7 @@ function createChart(json) {
   
   const ctx = document.getElementById('WeatherChart').getContext('2d');
   new Chart(ctx, {
-    type: 'bar',
+    type: 'line',
     data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
         datasets: [{
