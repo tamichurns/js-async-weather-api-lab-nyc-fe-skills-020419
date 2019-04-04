@@ -57,7 +57,8 @@ function displayFiveDayForecast(json) {
   const forecasts = json.list 
   let startingString = ''
   for (let forecast of forecasts) {
-  let divString = "<div> <p>" + forecast.main.temp_min + "</p>" + "<p>" + forecast.main.temp_max + "</p>" + "<p>" + forecast.dt_text + "</p> </div>"
+  let divString = "<div> <p>" + forecast.main.temp_min + "</p>" + "<p>" + forecast.main.temp_max + "</p>" + "<p>" + 
+  forecast.dt_text + "</p> </div>"
   startingString += divString
   const aside = document.getElementById('five-day')
   aside.innerHTML = startingString
